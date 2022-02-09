@@ -25,8 +25,8 @@ echo "function ClickConnect() {
 setInterval(ClickConnect, 60000)"
 echo ================================
 echo Script by HanO
-echo Cell: +84978.39.41.43
-echo Email: daibangcam@gmail.com
-echo Website: hano.cf
+echo Original by daibangcam
+echo edit by ___Kurumi_Nanase__
+echo Email: hieunhan2k7@gmail.com
 echo ================================
 sudo qemu-system-x86_64 -vnc :0 -hda lite7.qcow2  -smp cores=2  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1
