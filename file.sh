@@ -7,7 +7,7 @@ echo Please wait for installing...
 echo "Installing QEMU (2-3m)..."
 sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
 echo Downloading Windows Disk...
-curl -L -o lite7.qcow2 https://cdn-144.anonfiles.com/5aa0S3Gcx7/76554ad2-1644396873/TINY%207.qcow2
+curl -L -o lite7.qcow2 https://cdn-144.anonfiles.com/5aa0S3Gcx7/76554ad2-1644396873/TINY%207.qcow2 X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220209%2Fus-east-1%2Fs3%2Faws4_request X-Amz-Date=20220209T074454Z X-Amz-SignedHeaders=host  response-content-disposition=attachment%3B%20filename%3DTINY.7.qcow2 response-content-type=application%2Foctet-stream X-Amz-Signature=1aabaa29e93d8245f11c1c578c91ff01a9b6cbe0c01bf4e330fd06937c55ded4 
 echo "Windows 7 x86 Lite On Google Colab"
 echo Your VNC IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
